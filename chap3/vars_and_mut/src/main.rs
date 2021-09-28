@@ -13,7 +13,6 @@ fn main() {
         Mutation can always be looked at through the dichotomy of pipelining a user's inputs and outputs
         to a state tree before being submitted within a payload. 
 
-        A variables type cannot be mutated? 
     */
     let mut x = 5;
     println!("The value of x is, {}", x);
@@ -32,7 +31,7 @@ fn main() {
 
     /*
 
-        Shadowing a value is when it can be easily overwritten
+        Shadowing a value is when it can be easily overwritten using the let keyword or not. 
 
     */
 
