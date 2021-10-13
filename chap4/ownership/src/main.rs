@@ -41,3 +41,9 @@ fn main() {
     Types that implement the trait Copy allow for
 
 */
+
+/*
+
+    &str vs String type 
+
+*/

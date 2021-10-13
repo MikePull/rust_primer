@@ -19,7 +19,7 @@ fn main() {
 
         Signed numbers are stored using two’s complement representation.
         The primary situation in which you’d use isize or usize is when 
-        indexing some sort of collection.
+       INDEXING SOME SORT OF COLLECTION
     */
 
     /* floats => 
@@ -41,10 +41,14 @@ fn main() {
     /*
         A tuple is a general way of grouping together 
         a number of values with a variety of types into 
-        one compound type. Tuples have a fixed length: once declared, 
+        one compound type. 
+        
+        Tuples have a fixed length: once declared, 
         they cannot grow or shrink in size.
     */
+
     let tup: (i32, f64, u8) = (400, 8.4, 5);
+    
     /*
         The variable tup binds to the entire tuple, 
         because a tuple is considered a single compound element. 

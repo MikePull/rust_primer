@@ -9,11 +9,13 @@ fn main() {
         retrieves the lazily-initialized thread-local random number generator, 
         seeded by the system. Intended to be used in method chaining style, 
         e.g. thread_rng().gen::<i32>
+
     */
-    let secret_number = rand::thread_rng().gen_range(1..101);
+    let secret_number = rand::thread_rng().gen_range(1..101); // takes in specific type
    
     // comment out this line for debugging and to not give away the number.
     println!("This is the secret: {}", secret_number);
+
     loop {
         println!("Please input your guess.");
         let mut guess = String::new();
@@ -22,6 +24,8 @@ fn main() {
             .read_line(&mut guess)
             .expect("Failed to read line");
 
+        
+        // This casts the string to an int after parsing the input as a string 
        let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => continue,

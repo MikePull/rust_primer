@@ -1,17 +1,17 @@
 fn main() {
     add_two_nums(5, 8);
 
-    eval_expression(89);
+    eval_expression(89); // encapsulates the sum of the number with another varuable within an expression and returns
 
     println!("This is my function that returns: {}", five());
 }
 
-// This is a basic function taking in params
+// This is a basic function taking in TYPED parameters
 fn add_two_nums(x: i32, y: i32) {
     println!("The value of the sum is: {}", x + y);
 }
 
-// This is a function that contains an expression using {}
+// This is a function that contains an expression using curly braces: {}
 fn eval_expression(val: i32) {
     let y = {
         let x = 3;

@@ -1,11 +1,12 @@
 fn main() {
     /*
+
         Mutability can be very useful. 
         Variables are immutable only by default;
         You can make them mutable by adding mut in front of the variable name. 
 
         In addition to allowing this value to change, 
-        mut conveys intent to future readers of the code 
+        "mut" conveys intent to future readers of the code 
         by indicating that other parts of the code will be changing 
         this variable’s value.
 
@@ -16,7 +17,8 @@ fn main() {
     */
     let mut x = 5;
     println!("The value of x is, {}", x);
-    // MUTATION
+
+    // MUTATION by reassignment
     x = 6;
     println!("The value of x is, {}", x);
 
@@ -32,10 +34,11 @@ fn main() {
     /*
 
         Shadowing a value is when it can be easily overwritten using the let keyword or not. 
+        Was is the difference between shadowing a value and mutation?
 
     */
 
-    println!("The shadowed value is: {}", shadowed_val);
+    println!("The shadowed value is: {} () the last value times 2", shadowed_val);
     
     /* 
 
@@ -44,11 +47,5 @@ fn main() {
         variable be immutable AFTER those transformations 
         have been completed.
    
-    */
-
-    /* 
-    
-        Constants
-
     */
 }
