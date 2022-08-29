@@ -1,20 +1,29 @@
 use std::io;
 use std::any::type_name;
+use std::any::Any;
 
 fn main() {
 
     // If and If-else statements are standard in Rust; the conditional needs no parentheses
     basic_if_else();
 
-    // There are Infinite Loops (as seen in Chapter 2 using a prompt), For Loops, and While Loops
+    // There are Infinite Loops (as seen in Chapter 2 using a prompt)
+    // For In Loops, Ranges, While Loops
     learn_loops();
-    
+
+    ////////////////// EXERCISES ///////////////////
+
+    // Each function takes in a readline function as a prompt for the respective 
+    // input even considering input type
+
     fizzbuzz(
         loop_readline("Input a number for fizzbuzz")
     );
+    convert_temp(
+        loop_readline("Input temperature format ('C' for Celsius or 'F' for Farenheit)"), 
+        loop_readline("Input your temperature")
+    );
 
-    ////////////////// EXERCISES ///////////////////
-    convert_temp(1.0, "F");
     gen_nth_fibonacci_loop(5);
 
 }
@@ -62,6 +71,7 @@ fn learn_loops() {
 // For loop by traversing an array:
     let arr = [10, 20, 30, 40, 50];
 
+// Make an array iterable before the For In Loop 
     for el in arr.iter() {
         println!("The value is: {}", el);
     }
@@ -87,7 +97,7 @@ fn fizzbuzz (num: u32) {
 
 
 // TODO -> Change take in parameter to expect a generic type
-fn loop_readline(prompt: &str) -> u32 {
+fn loop_readline<T>(prompt: &str) -> T {
     let mut _input = String::new();
     loop {
         println!("{}", prompt);
@@ -111,7 +121,7 @@ fn loop_readline(prompt: &str) -> u32 {
 
 // Convert temperatures between Fahrenheit and Celsius.
 // Better to use a struct to switch between formats
-fn convert_temp(mut temp: f32, mut format: &str) -> f32 {
+fn convert_temp(mut format: &str, mut temp: f32) -> f32 {
 
     let original_temp = temp;
 

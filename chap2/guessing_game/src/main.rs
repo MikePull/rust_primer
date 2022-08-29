@@ -3,21 +3,27 @@ use std::cmp::Ordering;
 use rand::Rng;
 
 fn main() {
+
+    // SEE EVENT DRIVEN PROGRAMMING
+
     // Use of the println Macro 
-    println!("Guess the number!");
+    println!("Guess the number!");`
      /*
         retrieves the lazily-initialized thread-local random number generator, 
-        seeded by the system. Intended to be used in method chaining style, 
+        "seeded" by the system. Intended to be used in method chaining style, 
         e.g. thread_rng().gen::<i32>
-
+        
     */
     let secret_number = rand::thread_rng().gen_range(1..101); // takes in specific type
    
     // comment out this line for debugging and to not give away the number.
     println!("This is the secret: {}", secret_number);
 
+    // loops forever breaking at keywords
     loop {
         println!("Please input your guess.");
+
+        // mut makes variables mutable see Chapter 3 "guess" is bound to a new empty instance of String
         let mut guess = String::new();
 
         io::stdin()

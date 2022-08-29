@@ -2,7 +2,7 @@ fn main() {
     /*
         Rust is a statically typed language, 
         which means that it MUST know the types 
-        of all variables at compile time. 
+        of all variables at "compile time". 
         The compiler can usually infer what type we want 
         to use based on the value and how we use it.
     */

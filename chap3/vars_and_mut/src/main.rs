@@ -12,7 +12,7 @@ fn main() {
 
         From an event-driven standpoint and taking from "static" "public" and "private" keywords 
         Mutation can always be looked at through the dichotomy of pipelining a user's inputs and outputs
-        to a state tree before being submitted within a payload. 
+        to a state tree before being submitted within a payload. To developer policies written on the command line.
 
     */
     let mut x = 5;
@@ -34,7 +34,7 @@ fn main() {
     /*
 
         Shadowing a value is when it can be easily overwritten using the let keyword or not. 
-        Was is the difference between shadowing a value and mutation?
+        What is the difference between shadowing a value and mutation?
 
     */
 
