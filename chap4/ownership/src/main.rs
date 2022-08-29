@@ -69,14 +69,13 @@ fn main() {
     These configurations by which to exemplify Rust's memory safety through the allocator. 
 
     the invalidation step as seen in compilers is refered to as a "move" of addresses as opposed to 
-    shallow v. deep copying 
+    shallow v. deep copying ("cloning" see chapter 5)
 */
 
 /*
 
     &str vs String type 
 
-    Types that implement the trait Copy allow for
 
 */
 
