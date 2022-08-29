@@ -37,14 +37,14 @@ fn main() {
 
     println!("{}", s_from_heap) // format since using variable name
 
-    // What is "drop"
-    // What is double free?
-
-    
-
 }
 
 /*
+
+    // What is "drop"
+    // What is double free?
+    // What is a "move" 
+
     In the case of a string literal, we know the contents at compile time, 
     so the text is hardcoded directly into the final executable.
 
@@ -63,13 +63,20 @@ fn main() {
     lifetime is sometimes called Resource Acquisition Is Initialization (RAII).
     The drop function in Rust will be familiar to you if you’ve used RAII patterns.
 
+    Garbage Collection historically through runtimes as been from matching each "allocate"
+    to "free" calls upon catching memory through events. 
 
-    Types that implement the trait Copy allow for
+    These configurations by which to exemplify Rust's memory safety through the allocator. 
 
+    the invalidation step as seen in compilers is refered to as a "move" of addresses as opposed to 
+    shallow v. deep copying 
 */
 
 /*
 
     &str vs String type 
 
+    Types that implement the trait Copy allow for
+
 */
+
