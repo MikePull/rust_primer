@@ -70,12 +70,6 @@ fn main() {
 
     the invalidation step as seen in compilers is refered to as a "move" of addresses as opposed to 
     shallow v. deep copying ("cloning" see chapter 5)
+
+    Also see the "Copy" among "Derivable Traits"
 */
-
-/*
-
-    &str vs String type 
-
-
-*/
-
