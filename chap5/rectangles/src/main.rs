@@ -1,4 +1,4 @@
-// Can be refactored with Tuples and Structs see the Debug Trait
+// Can be refactored with Tuples and Structs see the Debug Trait to inspect state
 // Methods can be declared using impl block as well as 'self' keyword can be used
 // for member values / methods from taking &self as parameter mutably or not 
 

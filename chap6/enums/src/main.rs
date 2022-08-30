@@ -29,4 +29,23 @@ fn main() {
         V4(Ipv4Addr),
         V6(Ipv6Addr)
     }
+    enum Message {
+        Quit,
+        Move { x: i32, y: i32 },
+        Write(String),
+        ChangeColor(i32, i32, i32)
+    }
+
+    // You can incoke impl on Emums as well to create instance methods
+    impl Message {
+        fn call(&self) {
+
+        }
+    }
 }
+
+/*
+    Options are widely used enums to exemplify nullable values 
+    There are are cases when you'd want the type Some, None, <T> 
+    When working with them 
+*/
